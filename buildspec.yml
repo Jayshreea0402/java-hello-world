@@ -9,4 +9,4 @@ phases:
       - mv HelloWorld.class $CODEBUILD_SRC_DIR/artifacts # Move the compiled class file to the artifact folder
 
 artifacts:
-  files: artifacts/HelloWorld.class
+  files: **/*
