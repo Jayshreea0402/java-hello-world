@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - javac HelloWorld.java # Compile your Java code
+  post_build:
+    commands:
+      - mv HelloWorld.class $CODEBUILD_SRC_DIR/artifacts # Move the compiled class file to the artifact folder
+
+artifacts:
+  files: artifacts/HelloWorld.class
